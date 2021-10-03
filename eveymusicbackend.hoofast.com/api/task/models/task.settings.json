@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Task",
+  "info": {
+    "name": "task"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "day": {
+      "type": "string"
+    },
+    "reminder": {
+      "type": "boolean"
+    }
+  }
+}

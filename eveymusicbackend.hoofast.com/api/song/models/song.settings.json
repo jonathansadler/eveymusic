@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "song",
+  "info": {
+    "name": "Song"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "artist": {
+      "type": "string"
+    },
+    "songName": {
+      "type": "string"
+    },
+    "numFavs": {
+      "type": "biginteger"
+    },
+    "scNo": {
+      "type": "biginteger",
+      "required": true,
+      "unique": true
+    },
+    "tempYoutubeNo": {
+      "type": "string"
+    },
+    "poster": {
+      "model": "app-user"
+    },
+    "favs": {
+      "via": "song",
+      "collection": "fav"
+    }
+  }
+}

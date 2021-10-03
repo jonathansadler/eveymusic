@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "app_users",
+  "info": {
+    "name": "AppUser"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "username": {
+      "type": "biginteger",
+      "unique": true,
+      "required": true
+    },
+    "favs": {
+      "via": "app_user",
+      "collection": "fav"
+    }
+  }
+}

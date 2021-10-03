@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favs",
+  "info": {
+    "name": "Fav"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "song": {
+      "model": "song",
+      "via": "favs"
+    },
+    "app_user": {
+      "model": "app-user",
+      "via": "favs"
+    }
+  }
+}

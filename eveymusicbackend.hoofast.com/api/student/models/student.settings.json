@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Student",
+  "info": {
+    "name": "student"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "student": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

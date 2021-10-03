@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Bus",
+  "info": {
+    "name": "bus"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "students": {
+      "collection": "student"
+    },
+    "dogs": {
+      "collection": "dog"
+    }
+  }
+}

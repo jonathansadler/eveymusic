@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Article",
+  "info": {
+    "name": "article"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "test": {
+      "type": "string"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "articles",
+      "dominant": true
+    }
+  }
+}

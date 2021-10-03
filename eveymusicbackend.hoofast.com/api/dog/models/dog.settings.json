@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Dog",
+  "info": {
+    "name": "dog"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "dog": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "labradors": {
+      "collection": "labradors"
+    }
+  }
+}

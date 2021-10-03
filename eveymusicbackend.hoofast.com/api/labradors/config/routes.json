@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/labradors",
+      "handler": "labradors.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/labradors/count",
+      "handler": "labradors.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/labradors/:id",
+      "handler": "labradors.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/labradors",
+      "handler": "labradors.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/labradors/:id",
+      "handler": "labradors.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/labradors/:id",
+      "handler": "labradors.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

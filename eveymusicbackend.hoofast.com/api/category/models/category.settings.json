@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Category",
+  "info": {
+    "name": "category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "test": {
+      "type": "string"
+    },
+    "articles": {
+      "via": "categories",
+      "collection": "article"
+    }
+  }
+}
